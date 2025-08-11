@@ -60,3 +60,4 @@ rl.question("Ingresa la cantidad en kilómetros: ", (kilometros) => {
     console.log(resultado);
     rl.close();
 });
+ 
