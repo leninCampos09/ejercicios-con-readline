@@ -1,4 +1,15 @@
-//Una tienda online gestiona la información de sus productos. Cada producto debe tener: Detalles (nombre, precio, categoria) Inventario (stock, proveedor, ubicacion) Historial (fechaIngreso, ultimaVenta, ventasTotales) Tareas a realizar: Crear el objeto producto. Mostrar únicamente los detalles. Aumentar el stock en 50 unidades. Cambiar la categoría a "Electrónica". Extraer el nombre y precio en variables separadas. Mostrar el objeto actualizado.
+// Una tienda online gestiona la información de sus productos:
+// Detalles (nombre, precio, categoria)
+// Inventario (stock, proveedor, ubicacion)
+// Historial (fechaIngreso, ultimaVenta, ventasTotales)
+
+// Tareas a realizar:
+// 1. Crear el objeto producto. ✅
+// 2. Mostrar únicamente los detalles. ✅
+// 3. Aumentar el stock en 50 unidades.
+// 4. Cambiar la categoría a "Electrónica".
+// 5. Extraer el nombre y precio en variables separadas.
+// 6. Mostrar el objeto actualizado.
 
 // Crear el objeto producto
 const producto = {

@@ -1,16 +1,16 @@
-//Una biblioteca maneja información de sus libros: 
-//Información (titulo, autor, genero) 
-//Disponibilidad (copias, prestados, ubicacion) 
-//Registro (fechaPublicacion, fechaIngreso, ultimaRevision) 
+// Una biblioteca maneja información de sus libros:
+// Información (titulo, autor, genero)
+// Disponibilidad (copias, prestados, ubicacion)
+// Registro (fechaPublicacion, fechaIngreso, ultimaRevision)
 
-//Tareas a realizar: 
-//1. Crear el objeto libro. ✅
-//2. Mostrar la información del autor. ✅
-//3. Calcular cuántos ejemplares disponibles quedan (copias - prestados).
-//4. Actualizar la ultimaRevision con la fecha actual.
-//5. Cambiar el género del libro.
-//6. Extraer titulo y ubicacion en variables.
-//7. Mostrar el objeto actualizado.
+// Tareas a realizar:
+// 1. Crear el objeto libro. ✅
+// 2. Mostrar la información del autor. ✅
+// 3. Calcular cuántos ejemplares disponibles quedan (copias - prestados).
+// 4. Actualizar la ultimaRevision con la fecha actual.
+// 5. Cambiar el género del libro.
+// 6. Extraer titulo y ubicacion en variables.
+// 7. Mostrar el objeto actualizado.
 
 //crear el objeto libro
 const libro = {

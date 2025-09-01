@@ -1,4 +1,16 @@
-//una aplicación móvil necesita gestionar los perfiles de sus usuarios. Se requiere crear un objeto anidado que contenga: Información personal (nombre, edad, email) Preferencias de la aplicación (idioma, notificaciones, tema) Estadísticas de uso (fechaRegistro, ultimoAcceso, numeroSesiones). Tareas a realizar: Crear un objeto perfilUsuario con tres objetos anidados. Mostrar cada sección de información por separado. Cambiar el idioma de "español" a "inglés". Actualizar la fecha de último acceso a la fecha actual. Eliminar una preferencia innecesaria. Extraer el email y el idioma en variables separadas. Mostrar el perfil completo actualizado.
+// Una aplicación móvil necesita gestionar los perfiles de sus usuarios:
+// Información personal (nombre, edad, email)
+// Preferencias de la aplicación (idioma, notificaciones, tema)
+// Estadísticas de uso (fechaRegistro, ultimoAcceso, numeroSesiones)
+
+// Tareas a realizar:
+// 1. Crear un objeto perfilUsuario con tres objetos anidados. ✅
+// 2. Mostrar cada sección de información por separado. ✅
+// 3. Cambiar el idioma de "español" a "inglés".
+// 4. Actualizar la fecha de último acceso a la fecha actual.
+// 5. Eliminar una preferencia innecesaria.
+// 6. Extraer el email y el idioma en variables separadas.
+// 7. Mostrar el perfil completo actualizado.
 
 
 //crear el objeto perfilUsuario con tres objetos anidados
