@@ -33,9 +33,18 @@ const deTodo= ['Hola', 10, true, 'si', null, {nombre: 'juan', trabajo: 'programa
 // console.log(meses);
 
 //imprimir enero, febrero y marzo en el mismo console.log
-for(let i=0;i<meses.length;i++){
-    if(i<3){
-        console.log(meses[i]);
-    }
-}
+// for(let i=0;i<meses.length;i++){
+//     if(i<3){
+//         console.log(meses[i]);
+//     }
+// }
 
+//insertar el 80 antes del 30
+// numeros.splice(2, 0, 80);
+// console.log(numeros);
+
+//imprimir el primer y el ultimo dia de la semana
+const diasSemana = ['Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado', 'Domingo'];
+let primer = diasSemana[0];
+let ultimo= diasSemana[diasSemana.length -1];
+console.log(ultimo);
