@@ -19,8 +19,12 @@ function pedirNumero() {
             } else {
                 const suma = numeros.reduce((acc, curr) => acc + curr, 0);
                 const promedio = suma / numeros.length;
+                const notaMaxima = Math.max(...numeros);
+                const notaMinima = Math.min(...numeros);
                 console.log(`\nNúmeros ingresados: ${numeros.join(', ')}`);
                 console.log(`Promedio: ${promedio}`);
+                console.log(`Nota más alta: ${notaMaxima}`);
+                console.log(`Nota más baja: ${notaMinima}`);
                 rl.close();
             }
         } else {
