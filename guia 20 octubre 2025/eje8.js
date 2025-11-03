@@ -2,11 +2,8 @@
 // trabajadas y el valor de una hora de trabajo normal. Luego, calcule el salario total,
 // considerando que cada hora extra se paga 1.5 del valor de la hora normal. Mostrar el
 // resultado en la consola. 
-
-
 // Importamos la librería readline
 import readline from 'readline';
-
 // Creamos la interfaz para leer desde la consola
 const rl = readline.createInterface({
   input: process.stdin,
