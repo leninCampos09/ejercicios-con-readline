@@ -1,38 +1,46 @@
-/// Programa que muestra un saludo según la hora y los minutos actuales usando switch
+// Importar readline
+import readline from 'readline';
 
-function mostrarSaludo() {
-  const fecha = new Date();
-  const hora = fecha.getHours();
-  const minutos = fecha.getMinutes();
+// Crear la interfaz de lectura
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
 
-  let saludo;
+// Pedir hora y minutos al usuario
+rl.question('Ingresa la hora (0-23): ', (horaStr) => {
+  rl.question('Ingresa los minutos (0-59): ', (minStr) => {
+    const hora = parseInt(horaStr);
+    const minutos = parseInt(minStr);
 
-  switch (true) {
-    case hora >= 6 && hora <= 11:
-      saludo = '¡Buenos días!';
-      break;
-    case hora >= 12 && hora <= 17:
-      saludo = '¡Buenas tardes!';
-      break;
-    case hora >= 18 && hora <= 23:
-      saludo = '¡Buenas noches!';
-      break;
-    case hora >= 0 && hora <= 5:
-      saludo = '¡A dormir!';
-      break;
-    default:
-      saludo = 'Hora no válida';
-      break;
-  }
+    let saludo;
 
-  // Formatear los minutos con dos dígitos (ej: 09 en lugar de 9)
-  const horaFormateada = `${hora.toString().padStart(2, '0')}:${minutos
-    .toString()
-    .padStart(2, '0')}`;
+    switch (true) {
+      case hora >= 6 && hora <= 11:
+        saludo = '¡Buenos días!';
+        break;
+      case hora >= 12 && hora <= 17:
+        saludo = '¡Buenas tardes!';
+        break;
+      case hora >= 18 && hora <= 23:
+        saludo = '¡Buenas noches!';
+        break;
+      case hora >= 0 && hora <= 5:
+        saludo = '¡A dormir!';
+        break;
+      default:
+        saludo = 'Hora no válida';
+        break;
+    }
 
-  console.log(`Hora actual: ${horaFormateada}`);
-  console.log(saludo);
-}
+    // Formatear hora y minutos con dos dígitos
+    const horaFormateada = `${hora.toString().padStart(2, '0')}:${minutos
+      .toString()
+      .padStart(2, '0')}`;
 
-// Llamar a la función
-mostrarSaludo();
+    console.log(`\nHora ingresada: ${horaFormateada}`);
+    console.log(saludo);
+
+    rl.close();
+  });
+});
